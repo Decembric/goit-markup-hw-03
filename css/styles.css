@@ -325,6 +325,7 @@ body {
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
+  border-color: transparent;
 }
 
 .filter-btn:hover,
@@ -368,6 +369,7 @@ body {
 .filter-cards {
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .filter-cards:nth-child(3n) {
@@ -380,4 +382,5 @@ body {
 
 .portfolio-image {
   margin-bottom: 20px;
+  width: 368px;
 }
