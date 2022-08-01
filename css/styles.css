@@ -1,13 +1,32 @@
 :root {
-  --main-background-color: #FFFFFF;
+  --main-background-color: #ffffff;
   --main-text-color: #212121;
   --primary-text-color: #757575;
-  --hover-text-color: #2196F3;
-  --background-hero-color: #2F303A;
+  --hover-text-color: #2196f3;
+  --background-hero-color: #2f303a;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
 }
@@ -21,25 +40,46 @@ body {
 }
 
 /* --------Секция хедер--------- */
-  
 
+.header-bg {
+  background-color: var(--main-background-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
 
 .blue {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em; 
+  letter-spacing: 0.03em;
   color: var(--hover-text-color);
 }
 
 .header-logo {
-  font-family: 'Raleway', sans-serif;
+  display: block;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
 }
 
 .header-link {
@@ -59,14 +99,26 @@ body {
   color: var(--hover-text-color);
 }
 
+.site-nav {
+  display: flex;
+}
+
+.content-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 50px;
+}
+
 .mail {
-   color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 /* --------Секция герой--------- */
 
 .hero {
   background-color: var(--background-hero-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -76,6 +128,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color);
+  padding-top: 200px;
+  padding-bottom: 280px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -87,6 +144,9 @@ body {
   color: var(--main-background-color);
   cursor: pointer;
   background: var(--hover-text-color);
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 /* --------Секция особенностей----- */
@@ -104,6 +164,10 @@ body {
   margin: -1px;
 }
 
+.features-content {
+  padding: 94px 0px;
+}
+
 .specification-title {
   font-weight: 700;
   font-size: 14px;
@@ -111,6 +175,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.specification-content {
+  display: flex;
+  gap: 30px;
 }
 
 .specification {
@@ -118,6 +188,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  max-width: 270px;
 }
 
 /* --------Секция работа--------- */
@@ -128,12 +199,23 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.work-content {
+  padding-bottom: 94px;
+}
+
+.work-flex {
+  display: flex;
+  gap: 30px;
 }
 
 /* ----------Секция команда---------- */
 
 .team {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .team-title {
@@ -142,6 +224,9 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 50px;
+  padding-top: 94px;
+  text-align: center;
 }
 
 .team-name {
@@ -150,6 +235,9 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-profession {
@@ -157,21 +245,31 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.team-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* --------Секция футер---------- */
 
 .footer {
-  background: var(--background-hero-color);
+  background-color: var(--background-hero-color);
 }
 
 .footer-link {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
+  padding-top: 60px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -180,9 +278,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
+  padding-bottom: 60px;
 }
 
-.footer-mail, .footer-tel {
+.contact {
+  margin-bottom: 9px;
+}
+
+.footer-mail,
+.footer-tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -192,7 +296,7 @@ body {
 .adress {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;  
+  letter-spacing: 0.03em;
   color: var(--main-background-color);
 }
 
@@ -212,13 +316,15 @@ body {
 }
 
 .filter-btn {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-letter-spacing: 0.03em;
-color: var(--main-text-color);
-background: #F5F4FA;
-cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background: #f5f4fa;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -232,6 +338,8 @@ cursor: pointer;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
 
 .portfolio-image-name {
@@ -239,4 +347,37 @@ cursor: pointer;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.button-block {
+  padding-top: 94px;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.filter-block {
+  padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-cards {
+  margin-right: 30px;
+  margin-bottom: 0px;
+}
+
+.filter-cards:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.filter-cards:nth-child(-n + 3) {
+  margin-bottom: 30px;
+}
+
+.portfolio-image {
+  margin-bottom: 20px;
 }
