@@ -367,7 +367,7 @@ body {
 
 .filter-cards {
   margin-right: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .filter-cards:nth-child(3n) {
