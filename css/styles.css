@@ -23,6 +23,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -119,6 +121,8 @@ body {
 .hero {
   background-color: var(--background-hero-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -128,11 +132,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color);
-  padding-top: 200px;
-  padding-bottom: 280px;
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -144,7 +147,6 @@ body {
   color: var(--main-background-color);
   cursor: pointer;
   background: var(--hover-text-color);
-  margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
 }
@@ -216,6 +218,7 @@ body {
 
 .team {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -235,7 +238,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -252,12 +255,16 @@ body {
 .team-content {
   display: flex;
   justify-content: space-between;
+  background: #f5f4fa;
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* --------Секция футер---------- */
 
 .footer {
   background-color: var(--background-hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link {
@@ -267,7 +274,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
-  padding-top: 60px;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -278,7 +284,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
-  padding-bottom: 60px;
 }
 
 .contact {
@@ -340,7 +345,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin-bottom: 4px;
-  padding-left: 24px;
 }
 
 .portfolio-image-name {
@@ -348,16 +352,21 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-bottom: 20px;
-  padding-left: 24px;
+}
+
+.portfolio-box {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .button-block {
   padding-top: 94px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .filter-block {
@@ -369,18 +378,12 @@ body {
 .filter-cards {
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 
 .filter-cards:nth-child(3n) {
   margin-right: 0px;
 }
 
-.filter-cards:nth-child(-n + 3) {
+.filter-cards:nth-last-child(-n + 3) {
   margin-bottom: 30px;
-}
-
-.portfolio-image {
-  margin-bottom: 20px;
-  width: 368px;
 }
